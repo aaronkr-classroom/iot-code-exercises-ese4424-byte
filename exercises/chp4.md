@@ -25,7 +25,37 @@
 그 외는 "평일"을 출력함.
 변수는 month와 day를 사용함.<br>
 
-해답: 
+해답: month = 8
+day = 15
+
+days = {
+    (8, 15): "광복절"
+}
+
+if (month, day) in days:
+    print(days[(month, day)])
+elif (month % 2 == 1 and day == 15) or (month % 2 == 0 and day == 16):
+    print("그날")
+else:
+    print("평일")
+<br>
+
 3.for 문을 이용해 1~50의 짝수 합을 구하되, 3의 배수는 제외하세요.<br>
-4.연습문제 4.3을 while 문으로 해결하세요. 
+해답:<br>
+total = 0
+for i in range(1, 51):
+    if i % 2 == 0 and i % 3 != 0:
+        total += i
+print(total)
+<br>
+4.연습문제 4.3을 while 문으로 해결하세요. <br>
+해답: <br>
+total = 0
+i = 1
+while i < 51:
+    if i % 2 == 0 and i % 3 != 0:
+        total += i
+    i += 1
+print(total)
+
 
