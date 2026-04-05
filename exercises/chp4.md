@@ -25,7 +25,8 @@
 그 외는 "평일"을 출력함.
 변수는 month와 day를 사용함.<br>
 
-해답: month = 8
+해답: <br>
+month = 8
 day = 15
 
 days = {
